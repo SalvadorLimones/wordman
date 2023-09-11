@@ -11,7 +11,6 @@ const generateRandomColor = () => {
     result += element;
   }
 
-  block(150);
 
   return result;
 };
