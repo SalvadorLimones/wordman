@@ -1,4 +1,5 @@
 import { block } from '../lib/sleep';
+import { memo } from 'react';
 
 const ExpensiveComponent = () => {
   block(200);
@@ -9,4 +10,4 @@ const ExpensiveComponent = () => {
   );
 };
 
-export default ExpensiveComponent;
+export default memo(ExpensiveComponent);
